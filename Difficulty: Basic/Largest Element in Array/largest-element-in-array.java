@@ -52,14 +52,13 @@ class GFG {
 
 class Solution {
     public static int largest(int[] arr) {
-        int largest=arr[0];
-        for(int i=0;i<arr.length;i++){
-            
-            if(arr[i]>largest){
-            largest=arr[i];
+        int n=arr.length;
+        int lar=Integer.MIN_VALUE;
+        for(int i=0;i<n;i++){
+            if(arr[i]>lar){
+                lar=arr[i];
             }
         }
-        return largest;
+        return lar;
     }
-         
 }
